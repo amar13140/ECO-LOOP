@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#16a34a">
+
+    <meta name="description"
+          content="EcoLoop AI - Smart Waste Segregation and Recycling Platform">
+
+    <title>EcoLoop AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        ♻️ EcoLoop <span>AI</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <button class="login-btn" onclick="openLogin()">
+        Login
+    </button>
+
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            AI Powered Recycling
+        </span>
+
+        <h1>
+            Turn Waste Into
+            <span>Positive Impact</span>
+        </h1>
+
+        <p>
+            Scan your waste with AI, learn how to dispose of it correctly,
+            schedule recycling pickups and earn rewards.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button onclick="openLogin()" class="primary-btn">
+                Start Recycling
+            </button>
+
+            <button onclick="scrollToFeatures()" class="secondary-btn">
+                Explore Features
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="scan-icon">
+            📷
+        </div>
+
+        <h3>AI Waste Scanner</h3>
+
+        <p>
+            Point your camera at waste and let EcoLoop AI identify it.
+        </p>
+
+        <button onclick="openLogin()" class="scan-btn">
+            Scan Waste
+        </button>
+
+    </div>
+
+</section>
+
+
+<section id="features" class="features">
+
+    <h2>Everything You Need to Recycle Smarter</h2>
+
+    <p class="section-description">
+        EcoLoop AI connects waste identification, recycling,
+        rewards and environmental impact in one platform.
+    </p>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div>📷</div>
+            <h3>AI Scanner</h3>
+            <p>
+                Identify waste using your device camera.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div>♻️</div>
+            <h3>Smart Segregation</h3>
+            <p>
+                Get clear instructions for proper disposal.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div>🚚</div>
+            <h3>Pickup Scheduling</h3>
+            <p>
+                Schedule recyclable waste collection.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div>⭐</div>
+            <h3>Eco Rewards</h3>
+            <p>
+                Earn points for responsible recycling.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div>🌱</div>
+            <h3>Impact Tracking</h3>
+            <p>
+                Track your environmental contribution.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div>🏆</div>
+            <h3>Leaderboard</h3>
+            <p>
+                Compete with other eco-conscious users.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="about" class="about">
+
+    <h2>About EcoLoop AI</h2>
+
+    <p>
+        EcoLoop AI is an AI-powered smart waste management platform
+        designed to help people identify, segregate and recycle waste
+        correctly. Users can scan waste, receive disposal guidance,
+        schedule recyclable pickups, earn rewards and track their
+        environmental impact.
+    </p>
+
+</section>
+
+</main>
+
+
+<!-- LOGIN MODAL -->
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeLogin()">
+            ×
+        </button>
+
+        <h2>Welcome to EcoLoop AI</h2>
+
+        <p>Login or create your account</p>
+
+
+        <input
+            id="email"
+            type="email"
+            placeholder="Email address"
+        >
+
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Password"
+        >
+
+
+        <button
+            class="primary-btn full"
+            onclick="loginUser()">
+            Login
+        </button>
+
+
+        <button
+            class="secondary-btn full"
+            onclick="signupUser()">
+            Create Account
+        </button>
+
+
+        <p id="authMessage"></p>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 EcoLoop AI. Building a cleaner future.
+    </p>
+
+</footer>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
